@@ -1,0 +1,18 @@
+package example.codeclan.com.interfacesegregation;
+
+/**
+ * Created by user on 27/06/2017.
+ */
+
+public class Seal implements Edible{
+
+    @Override
+    public void eat(Edible food) {
+
+    }
+
+    public Seal iceFish(){
+        return null;
+    }
+
+}
