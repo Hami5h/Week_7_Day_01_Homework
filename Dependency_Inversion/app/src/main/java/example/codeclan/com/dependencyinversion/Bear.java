@@ -17,7 +17,7 @@ package example.codeclan.com.dependencyinversion;
 
 import java.util.ArrayList;
 
-public class Bear {
+public class Bear implements Writable{
 
     private Writable instrumentToWriteOn;
 

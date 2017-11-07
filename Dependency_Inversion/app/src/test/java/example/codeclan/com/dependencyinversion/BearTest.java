@@ -16,12 +16,12 @@ public class BearTest{
     Diary diary;
 
 
-   @Test
-    public void testWriteToDiary(){
-       Diary diary = new Diary();
-        diary.write("Dear diary, mood: apathetic...");
-        assertEquals("Dear diary, mood: apathetic...", diary.readLast());
-    }
+//   @Test
+//    public void testWriteToDiary(){
+//       Diary diary = new Diary();
+//        diary.write("Dear diary, mood: apathetic...");
+//        assertEquals("Dear diary, mood: apathetic...", diary.readLast());
+//    }
 
     @Test
     public void hasSomethingToWriteOn() {
@@ -29,13 +29,13 @@ public class BearTest{
         assertEquals(diary, bear.getInstrumentToWriteOn());
     }
 
-//    @Test
-//    public  void testBearWritesToDiary() {
-//        Diary diary = new Diary();
-//        Bear bear = new Bear(diary);
-//        bear.write("I can write");
-//        assertEquals("I can write", diary.readLast());
-//    }
+    @Test
+    public  void testBearWritesToDiary() {
+        Diary diary = new Diary();
+        Bear bear = new Bear(diary);
+        bear.write("I can write");
+        assertEquals("I can write", diary.readLast());
+    }
 
 
 }
