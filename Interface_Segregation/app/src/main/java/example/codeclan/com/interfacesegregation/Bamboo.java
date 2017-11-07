@@ -6,10 +6,6 @@ package example.codeclan.com.interfacesegregation;
 
 public class Bamboo implements Edible{
 
-    @Override
-    public void eat(Edible food) {
-
-    }
 
     public static Bamboo harvestBamboo(){
         return new Bamboo();

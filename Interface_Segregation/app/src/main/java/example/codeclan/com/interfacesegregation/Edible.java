@@ -6,6 +6,6 @@ package example.codeclan.com.interfacesegregation;
 
 public interface Edible{
 
-    public void eat(Edible food);
+//    public void eat(Edible food);
 
 }

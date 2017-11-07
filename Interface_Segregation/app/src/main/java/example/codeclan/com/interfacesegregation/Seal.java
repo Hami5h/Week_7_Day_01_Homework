@@ -6,10 +6,6 @@ package example.codeclan.com.interfacesegregation;
 
 public class Seal implements Edible{
 
-    @Override
-    public void eat(Edible food) {
-
-    }
 
     public Seal iceFish(){
         return null;
