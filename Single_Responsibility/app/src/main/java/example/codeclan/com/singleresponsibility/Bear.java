@@ -19,10 +19,12 @@ import java.util.ArrayList;
 public class Bear{
 
     private ArrayList<Salmon> belly;
+    private Journal journal;
 
 
     public Bear(){
         belly = new ArrayList<Salmon>();
+        journal = new Journal();
     }
 
     public void eat(Salmon food){
@@ -36,6 +38,14 @@ public class Bear{
 
     public boolean isBellyFull(){
         return (foodCount() >= 5);
+    }
+
+    public void write(String entry) {
+        this.journal.writeJournal(entry);
+    }
+
+    public Journal getJournal() {
+        return this.journal;
     }
 
 

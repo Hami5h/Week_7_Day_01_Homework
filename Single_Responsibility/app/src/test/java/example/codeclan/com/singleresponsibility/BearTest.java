@@ -12,6 +12,7 @@ public class BearTest{
 
     Bear bear;
     Salmon food;
+    Journal journal;
 
     @Before
     public void setup(){
@@ -31,6 +32,12 @@ public class BearTest{
             bear.eat(food);
         }
         assertEquals(5, bear.foodCount());
+    }
+
+    @Test
+    public void canWriteToJournal() {
+        bear.write("I am writing");
+        assertEquals("I am writing", bear.getJournal().getJournalEntry(0));
     }
 
 }
